@@ -39,12 +39,14 @@ jobs:
             package-lock.json
             example/package-lock.json
             packages/backend/package-lock.json
-      - uses: shivammathur/setup-php@v2
         with:
           php-version: "8.1"
 
-      - name: Install dependencies
-        run: npm install && make prepare && npm run test:prepare
+      - name: Install Test dependencies
+        run: npm install && npm run test:prepare
+
+      - name: Prepare Python env
+        run: make prepare
 
       - name: Clone the repo
         run: git clone "https://github.com/progressively-crew/progressively.git"
@@ -73,7 +75,7 @@ jobs:
         working-directory: ./progressively/packages/backend
         run: npm start &
 
-      - name: Start the Example PHP project
+      - name: Start the Example Python project
         run: make start &
 
       - name: E2E tests
