@@ -1,7 +1,9 @@
 start:
 	python3 -m example.app
 prepare:
+	python3 -m pip install --upgrade build
 	python3 -m venv venv
 	pip install -r requirements.txt
-	python3 setup.py build
-	
+	make build
+build:
+	python -m build --sdist --wheel	
