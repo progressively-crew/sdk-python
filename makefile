@@ -7,3 +7,6 @@ prepare:
 	make build
 build:
 	python -m build --sdist --wheel	
+deploy:
+	pip install twine
+	python3 -m twine upload dist/*
