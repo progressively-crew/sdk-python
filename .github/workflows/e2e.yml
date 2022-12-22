@@ -44,7 +44,7 @@ jobs:
           php-version: "8.1"
 
       - name: Install dependencies
-        run: npm install && make prepare
+        run: npm install && make prepare && npm run test:prepare
 
       - name: Clone the repo
         run: git clone "https://github.com/progressively-crew/progressively.git"
