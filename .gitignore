@@ -2,3 +2,7 @@ venv
 build
 dist
 progressively_sdk.egg-info
+node_modules
+/test-results/
+/playwright-report/
+/playwright/.cache/
