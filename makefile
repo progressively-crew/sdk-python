@@ -3,5 +3,6 @@ start:
 prepare:
 	python3 -m venv venv
 	pip install -r requirements.txt
-	python3 setup.py build
-	
+	make build
+build:
+	python -m build --sdist --wheel	
