@@ -1,0 +1,27 @@
+{
+  "name": "sdk-python",
+  "version": "1.0.0",
+  "description": "Work in progress",
+  "main": "index.js",
+  "directories": {
+    "example": "example"
+  },
+  "scripts": {
+    "test:e2e:ci": "playwright test",
+    "test:prepare": "playwright install && playwright install-deps"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/progressively-crew/sdk-python.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/progressively-crew/sdk-python/issues"
+  },
+  "homepage": "https://github.com/progressively-crew/sdk-python#readme",
+  "devDependencies": {
+    "@playwright/test": "^1.29.1"
+  }
+}

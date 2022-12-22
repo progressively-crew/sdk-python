@@ -17,5 +17,5 @@ class HelloWorldHandler(BaseHTTPRequestHandler):
             self.wfile.write(b'Old homepage')
 
 
-httpd = HTTPServer(('localhost', 8080), HelloWorldHandler)
+httpd = HTTPServer(('localhost', 3003), HelloWorldHandler)
 httpd.serve_forever()
