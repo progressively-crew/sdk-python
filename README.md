@@ -18,7 +18,6 @@ $ docker-compose up -d
 $ https://github.com/progressively-crew/sdk-python
 $ cd sdk-python
 $ make prepare
-$ make install
 $ make start
 ```
 
