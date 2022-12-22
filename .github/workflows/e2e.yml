@@ -39,8 +39,6 @@ jobs:
             package-lock.json
             example/package-lock.json
             packages/backend/package-lock.json
-        with:
-          php-version: "8.1"
 
       - name: Install Test dependencies
         run: npm install && npm run test:prepare
