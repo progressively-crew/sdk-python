@@ -6,9 +6,5 @@ setup(
     version='0.0.1',
     description='Python SDK for Progressively',
     author='Marvin Frachet <marvin.frachet@gmail.com>',
-    license='MIT',
-    install_requires=[
-        "requests>=2.28"],
-    setup_requires=[],
-    tests_require=[]
+    license='MIT'
 )
