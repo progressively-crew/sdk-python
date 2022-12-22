@@ -1,3 +1,4 @@
 venv
 build
 dist
+progressively_sdk.egg-info
